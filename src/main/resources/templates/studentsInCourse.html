@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>WP lab - Students in Course</title>
+
+</head>
+<body>
+<header>
+    <h1>Students in Course </h1>
+</header>
+<section>
+    <div th:each="student: ${studentsInCourse}">
+        <th:block th:text="${student.getName()}"></th:block>
+    </div>
+    <a href="/listCourses">Back</a>
+</section>
+
+</body>
+</html>
